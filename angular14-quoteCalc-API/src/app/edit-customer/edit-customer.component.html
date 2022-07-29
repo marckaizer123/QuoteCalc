@@ -1,0 +1,57 @@
+<div class="m-4">
+    <h3 class = "d-flex justify-content-center">QuoteCalculator</h3>
+    <div class="text-center">
+        <label style="font-size: 15px;">How much do you need?</label>
+        <br>
+        <label style="margin-left: 30px; font-size: 12px;">0</label>
+        <mat-slider min="0" max="15000" step="1000" value="{{data.amountRequired}}" thumbLabel [(ngModel)]="data.amountRequired"></mat-slider>
+        <label style="font-size: 12px;">15000</label>
+    </div>
+    <div class="text-center">
+        <label style="font-size: 15px;">How many months?</label>
+        <br>
+        <label style="font-size: 12px;">0</label>
+        <mat-slider min="0" max="12" step="1" value="{{data.term}}" thumbLabel id="termSlider" [(ngModel)]="data.term"></mat-slider>
+        <label style="font-size: 12px;">12</label>
+        <br> 
+    </div>
+    <div style="margin: auto; width:40%;">
+        <form>
+            <div style="float:left;">
+                <label for="titleInput">Title</label>       
+                <input type="text" id="titleInput" name="titleInput" placeholder="Mr." [(ngModel)]="data.title">
+            </div>
+            <div style="float:left;">
+                <label for="firstNameInput">First Name</label>
+                <input type="text" id="firstNameInput" name="firstNameInput" placeholder="First Name" [(ngModel)]="data.firstName">
+            </div>
+            <div style="float:left;">
+                <label for="lastNameInput">Last Name</label>
+                <input type="text" id="lastNameInput" name="lastNameInput" placeholder="Last Name"  [(ngModel)]="data.lastName">
+            </div>
+            <br><br>
+
+            <div style="float:left;">
+                <label for="dateInput">Birth Date</label>
+                <input type="date" id="dateInput" name="dateInput" placeholder="BirthDate"  [(ngModel)]="data.dateOfBirth">
+            </div>
+            <br><br><br>
+            <div style="float:left;">
+                <label for="emailInput">Email</label>
+                <input type="email" id="emailInput" name="emailInput" placeholder="Email" [(ngModel)]="data.email">
+            </div>
+            <div style="float:left;">
+                <label for="mobileInput">Mobile Number</label>
+                <input type="text" id="mobileInput" name="mobileInput" placeholder="Mobile"  [(ngModel)]="data.mobile">
+            </div>
+        </form>    
+    </div>
+    <br><br><br>
+    <div style="margin: auto; width:40%;">
+        <button style="margin: auto; width:40%;"
+        (click)="calculateQuote()">
+            Calculate Quote
+        </button>
+    </div>
+</div>
+

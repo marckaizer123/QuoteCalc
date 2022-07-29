@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wDRZpT4NjjDcRDLzjc+xI6EbXIJAPKkqNGK5TIaFPZY=",
+  "Source": "QuoteCalcWebAPI",
+  "BasePath": "_content/QuoteCalcWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
