@@ -2,11 +2,19 @@
  WebApp for calculating loans. Uses .NET Core framework and Angular.js
  
  
- To create the database used for this project, just execute the CustomerDatabase.sql quesry.
- To run the API, run "QuoteCalcWebAPI\QuoteCalcWebAPI.csproj"
- To run the UI part of the project, open "angular14-quoteCalc-API" in Visual Studio code, then type npm start in the terminal.
+ To create the database used for this project, just execute the CustomerDatabase.sql quesry. 
+ Then change (inside "QuoteCalcWebAPI\appsettings.json"
+ 
+ "ConnectionStrings": {
+    "DefaultConnection": "Data Source=Shinobu;Initial Catalog=customersDB;Integrated Security=True;Pooling=False"
+  }
+
+  to the connection string of the new database
  
  
+ To run the API, open "QuoteCalcWebAPI\QuoteCalcWebAPI.csproj" Then execute the code with Shift+F5. The port used is 7102
+ 
+ To run the UI part of the project, open "angular14-quoteCalc-API" in Visual Studio code, then type npm start in the terminal. The port used is 4200.
  
  
  
